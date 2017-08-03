@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="wxspellchecker_wxspellchecker_aspell-msys2.cbp" />
+		<Project filename="wxspellchecker_wxspellchecker_myspell-msys2.cbp" />
+		<Project filename="wxspellchecker_wxspellchecker-msys2.cbp" />
+		<Project filename="wxspellchecker_wxspellchecker_demo-msys2.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

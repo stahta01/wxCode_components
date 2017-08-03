@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxspellchecker_wxspellchecker_demo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32 DLL Unicode Release">
+				<Option output="../bin/wxSpellCheckerDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_gcc/wxspellchecker_demo" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fpermissive" />
+					<Add option="-DWIN32" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_WINDOWS" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory=".." />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples" />
+					<Add directory=".." />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxspellcheckeru" />
+					<Add library="libwx_mswu_adv-$(WX_VERSION).dll.a" />
+					<Add library="libwx_mswu_html-$(WX_VERSION).dll.a" />
+					<Add library="libwx_mswu_xrc-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu_net-$(WX_VERSION).dll.a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu-$(WX_VERSION).dll.a" />
+					<Add library="wxspellcheckeru" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="odbc32" />
+					<Add library="oleacc" />
+					<Add directory="../lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 Unicode Release">
+				<Option output="../bin/wxSpellCheckerDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_gcc/wxspellchecker_demo" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fpermissive" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_WINDOWS" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory=".." />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples" />
+					<Add directory=".." />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxspellchecker_wxspellchecker.a" />
+					<Add library="libwx_mswu_adv-$(WX_VERSION).a" />
+					<Add library="libwx_mswu_html-$(WX_VERSION).a" />
+					<Add library="libwx_mswu_xrc-$(WX_VERSION).a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).a" />
+					<Add library="libwx_baseu_net-$(WX_VERSION).a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).a" />
+					<Add library="libwx_baseu-$(WX_VERSION).a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="odbc32" />
+					<Add library="oleacc" />
+					<Add directory="../lib" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="WX_BUILD" value="release-" />
+				<Variable name="WX_VERSION" value="2.8" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</Compiler>
+		<Linker>
+			<Add directory="$(TARGET_COMPILER_DIR)lib" />
+		</Linker>
+		<Unit filename="../samples/wxWidgets/MySpellCheckDialog.cpp" />
+		<Unit filename="../samples/wxWidgets/MySpellCheckDialog.h" />
+		<Unit filename="../samples/wxWidgets/resource.h" />
+		<Unit filename="../samples/wxWidgets/wxSpellCheckerDemo.cpp" />
+		<Unit filename="../samples/wxWidgets/wxSpellCheckerDemo.h" />
+		<Extensions>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

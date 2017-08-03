@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxspellchecker_wxspellchecker_myspell" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32 DLL Unicode Release">
+				<Option output="../lib/wxspellcheckeru" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_gcc/wxspellchecker_myspell" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fpermissive" />
+					<Add option="-DWIN32" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DDLL_EXPORTS" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-DWXMAKINGDLL_WXSPELLCHECKER" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory=".." />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory=".." />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwx_mswu_adv-$(WX_VERSION).dll.a" />
+					<Add library="libwx_mswu_html-$(WX_VERSION).dll.a" />
+					<Add library="libwx_mswu_xrc-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu_net-$(WX_VERSION).dll.a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu-$(WX_VERSION).dll.a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="odbc32" />
+					<Add library="oleacc" />
+					<Add directory="../lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 Unicode Release">
+				<Option output="C:/Users/stahta01/devel/open_source_code/version_control/wxCode_components-git/wxspellchecker/lib/wxspellchecker_wxspellchecker_myspell" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="msys2_gcc/wxspellchecker_myspell" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DWIN32" />
+					<Add option="-D_LIB" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory=".." />
+				</Compiler>
+			</Target>
+			<Environment>
+				<Variable name="WX_BUILD" value="release-" />
+				<Variable name="WX_VERSION" value="2.8" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</Compiler>
+		<Unit filename="../MySpell/affentry.cxx" />
+		<Unit filename="../MySpell/affentry.hxx" />
+		<Unit filename="../MySpell/affixmgr.cxx" />
+		<Unit filename="../MySpell/affixmgr.hxx" />
+		<Unit filename="../MySpell/csutil.cxx" />
+		<Unit filename="../MySpell/csutil.hxx" />
+		<Unit filename="../MySpell/dictmgr.cxx" />
+		<Unit filename="../MySpell/dictmgr.hxx" />
+		<Unit filename="../MySpell/hashmgr.cxx" />
+		<Unit filename="../MySpell/hashmgr.hxx" />
+		<Unit filename="../MySpell/myspell.cxx" />
+		<Unit filename="../MySpell/myspell.hxx" />
+		<Unit filename="../MySpell/suggestmgr.cxx" />
+		<Unit filename="../MySpell/suggestmgr.hxx" />
+		<Unit filename="../include/MySpellInterface.h" />
+		<Unit filename="../include/PersonalDictionary.h" />
+		<Unit filename="../include/SpellCheckCmdLineInterface.h" />
+		<Unit filename="../include/SpellCheckDialogInterface.h" />
+		<Unit filename="../include/SpellCheckEngineInterface.h" />
+		<Unit filename="../include/SpellCheckEngineOption.h" />
+		<Unit filename="../include/SpellCheckUserInterface.h" />
+		<Unit filename="../include/SpellCheckerOptionsDialog.h" />
+		<Unit filename="../include/XmlPersonalDictionaryDialog.h" />
+		<Unit filename="../include/XmlSpellCheckDialog.h" />
+		<Unit filename="../src/MySpellInterface.cpp" />
+		<Unit filename="../src/PersonalDictionary.cpp" />
+		<Unit filename="../src/SpellCheckCmdLineInterface.cpp" />
+		<Unit filename="../src/SpellCheckDialogInterface.cpp" />
+		<Unit filename="../src/SpellCheckEngineInterface.cpp" />
+		<Unit filename="../src/SpellCheckEngineOption.cpp" />
+		<Unit filename="../src/SpellCheckUserInterface.cpp" />
+		<Unit filename="../src/SpellCheckerOptionsDialog.cpp" />
+		<Unit filename="../src/XmlPersonalDictionaryDialog.cpp" />
+		<Unit filename="../src/XmlSpellCheckDialog.cpp" />
+		<Extensions>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
