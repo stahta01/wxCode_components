@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxchart_minimal" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32 DLL Unicode Release Multilib">
+				<Option output="../samples/minimal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_gcc/minimal" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DWIN32" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_WINDOWS" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwx_mswu_core-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu-$(WX_VERSION).dll.a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="odbc32" />
+					<Add library="oleacc" />
+					<Add directory="../lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 Unicode Release Multilib">
+				<Option output="../samples/minimal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_gcc/minimal" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_WINDOWS" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxchartu.a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).a" />
+					<Add library="libwx_baseu-$(WX_VERSION).a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="odbc32" />
+					<Add library="oleacc" />
+					<Add directory="../lib" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="WX_BUILD" value="release-" />
+				<Variable name="WX_VERSION" value="2.8" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</ResourceCompiler>
+		<Unit filename="../samples/wxchart.cpp" />
+		<Unit filename="msw/wxchart.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

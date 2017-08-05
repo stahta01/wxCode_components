@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxchart_wxchart" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32 DLL Unicode Release Multilib">
+				<Option output="../lib/wxchartu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_gcc/wxchart" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DWIN32" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DDLL_EXPORTS" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-DWXMAKINGDLL_WXCHART" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwx_mswu_core-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu-$(WX_VERSION).dll.a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="odbc32" />
+					<Add library="oleacc" />
+					<Add directory="../lib" />
+				</Linker>
+			</Target>
+			<Target title="Win32 Unicode Release Multilib">
+				<Option output="C:/Users/stahta01/devel/open_source_code/version_control/wxCode_components-git/wxchart/lib/wxchart_wxchart" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="msys2_gcc/wxchart" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DWIN32" />
+					<Add option="-D_LIB" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+				</Compiler>
+			</Target>
+			<Environment>
+				<Variable name="WX_BUILD" value="release-" />
+				<Variable name="WX_VERSION" value="2.8" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</Compiler>
+		<Unit filename="../include/wx/axis.h" />
+		<Unit filename="../include/wx/bar3dchartpoints.h" />
+		<Unit filename="../include/wx/barchartpoints.h" />
+		<Unit filename="../include/wx/chart.h" />
+		<Unit filename="../include/wx/chartcolors.h" />
+		<Unit filename="../include/wx/chartctrl.h" />
+		<Unit filename="../include/wx/chartdef.h" />
+		<Unit filename="../include/wx/chartpoints.h" />
+		<Unit filename="../include/wx/chartpointstypes.h" />
+		<Unit filename="../include/wx/charttypes.h" />
+		<Unit filename="../include/wx/chartwindow.h" />
+		<Unit filename="../include/wx/label.h" />
+		<Unit filename="../include/wx/legend.h" />
+		<Unit filename="../include/wx/legendwindow.h" />
+		<Unit filename="../include/wx/pie3dchartpoints.h" />
+		<Unit filename="../include/wx/piechartpoints.h" />
+		<Unit filename="../include/wx/points.h" />
+		<Unit filename="../include/wx/xaxis.h" />
+		<Unit filename="../include/wx/xaxiswindow.h" />
+		<Unit filename="../include/wx/yaxis.h" />
+		<Unit filename="../include/wx/yaxiswindow.h" />
+		<Unit filename="../src/axis.cpp" />
+		<Unit filename="../src/bar3dchartpoints.cpp" />
+		<Unit filename="../src/barchartpoints.cpp" />
+		<Unit filename="../src/chart.cpp" />
+		<Unit filename="../src/chartcolors.cpp" />
+		<Unit filename="../src/chartctrl.cpp" />
+		<Unit filename="../src/chartwindow.cpp" />
+		<Unit filename="../src/label.cpp" />
+		<Unit filename="../src/legend.cpp" />
+		<Unit filename="../src/legendwindow.cpp" />
+		<Unit filename="../src/pie3dchartpoints.cpp" />
+		<Unit filename="../src/piechartpoints.cpp" />
+		<Unit filename="../src/points.cpp" />
+		<Unit filename="../src/xaxis.cpp" />
+		<Unit filename="../src/xaxiswindow.cpp" />
+		<Unit filename="../src/yaxis.cpp" />
+		<Unit filename="../src/yaxiswindow.cpp" />
+		<Extensions>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
