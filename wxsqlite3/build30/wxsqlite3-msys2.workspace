@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="wxsqlite3_wxsqlite3-msys2.cbp" />
+		<Project filename="wxsqlite3_minimal-msys2.cbp" />
+		<Project filename="wxsqlite3_treeview-msys2.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

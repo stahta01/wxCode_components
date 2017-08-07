@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxsqlite3_treeview_msys2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="MSys2 DLL wxMultiDLL">
+				<Option output="../samples/treeview/treeview" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_dll_wxMSW_dll/treeview" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWXUSINGDLL" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory="../samples/treeview" />
+					<Add directory="../sqlite3/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples/treeview" />
+					<Add directory="../sqlite3/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxcode_msw30u_wxsqlite3" />
+					<Add library="sqlite3" />
+					<Add library="libwx_mswu_adv-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).dll.a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu-$(WX_VERSION).dll.a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+					<Add directory="../lib/msys2_dll_wxMSW_dll" />
+					<Add directory="../sqlite3/lib" />
+				</Linker>
+			</Target>
+			<Target title="MSys2 wxMultiDLL">
+				<Option output="../samples/treeview/treeview" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_wxMSW_dll/treeview" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DWXUSINGDLL" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory="../samples/treeview" />
+					<Add directory="../sqlite3/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples/treeview" />
+					<Add directory="../sqlite3/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxsqlite3_gcc_wxsqlite3.a" />
+					<Add library="sqlite3" />
+					<Add library="libwx_mswu_adv-$(WX_VERSION).a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).a" />
+					<Add library="libwx_baseu-$(WX_VERSION).a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+					<Add directory="../lib/msys2_wxMSW_dll" />
+					<Add directory="../sqlite3/lib" />
+				</Linker>
+			</Target>
+			<Target title="MSys2 DLL wxMultilib">
+				<Option output="../samples/treeview/treeview" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_dll_wxMSW/treeview" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_WINDOWS" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory="../samples/treeview" />
+					<Add directory="../sqlite3/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples/treeview" />
+					<Add directory="../sqlite3/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxcode_msw30u_wxsqlite3" />
+					<Add library="sqlite3" />
+					<Add library="libwx_mswu_adv-$(WX_VERSION).a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).a" />
+					<Add library="libwx_baseu-$(WX_VERSION).a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+					<Add directory="../lib/msys2_dll_wxMSW" />
+					<Add directory="../sqlite3/lib" />
+				</Linker>
+			</Target>
+			<Target title="MSys2 wxMultilib">
+				<Option output="../samples/treeview/treeview" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_wxMSW/treeview" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_WINDOWS" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory="../samples/treeview" />
+					<Add directory="../sqlite3/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples/treeview" />
+					<Add directory="../sqlite3/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxsqlite3_gcc_wxsqlite3.a" />
+					<Add library="sqlite3" />
+					<Add library="libwx_mswu_adv-$(WX_VERSION).a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).a" />
+					<Add library="libwx_baseu-$(WX_VERSION).a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+					<Add directory="../lib/msys2_wxMSW" />
+					<Add directory="../sqlite3/lib" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="WX_VERSION" value="3.0" />
+			</Environment>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="MSys2 DLL wxMultiDLL;MSys2 wxMultiDLL;MSys2 DLL wxMultilib;MSys2 wxMultilib;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</ResourceCompiler>
+		<Unit filename="../samples/treeview/foldertree.cpp" />
+		<Unit filename="../samples/treeview/foldertree.h" />
+		<Unit filename="../samples/treeview/projectlist.cpp" />
+		<Unit filename="../samples/treeview/projectlist.h" />
+		<Unit filename="../samples/treeview/treeview.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="../samples/treeview/treeviewapp.cpp" />
+		<Unit filename="../samples/treeview/treeviewapp.h" />
+		<Unit filename="../samples/treeview/treeviewsample.cpp" />
+		<Unit filename="../samples/treeview/treeviewsample.h" />
+		<Unit filename="../samples/treeview/wmainframe.h" />
+		<Extensions>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
