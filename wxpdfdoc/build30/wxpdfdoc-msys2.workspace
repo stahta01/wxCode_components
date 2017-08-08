@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="wxpdfdoc wx3.0 MSys2">
+		<Project filename="wxpdfdoc_pdfdoc-msys2.cbp" />
+		<Project filename="wxpdfdoc_minimal-msys2.cbp" />
+		<Project filename="wxpdfdoc_dcsample-msys2.cbp" />
+		<Project filename="wxpdfdoc_makefont-msys2.cbp" />
+		<Project filename="wxpdfdoc_showfont-msys2.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxpdfdoc_minimal_msys2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="MSys2 DLL wxMultiDLL">
+				<Option output="../samples/minimal/msys2_dll_wxMSW_dll-minimal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_dll_wxMSW_dll/minimal" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-DWXUSINGDLL" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory="../samples/minimal" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples/minimal" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxcode_msw30u_pdfdoc" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu-$(WX_VERSION).dll.a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+					<Add directory="../lib/msys2_dll_wxMSW_dll" />
+				</Linker>
+			</Target>
+			<Target title="MSys2 DLL wxMultilib">
+				<Option output="../samples/minimal/msys2_dll_wxMSW-minimal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_dll_wxMSW/minimal" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_CONSOLE" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory="../samples/minimal" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples/minimal" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxcode_msw30u_pdfdoc" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).a" />
+					<Add library="libwx_baseu-$(WX_VERSION).a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+					<Add directory="../lib/msys2_dll_wxMSW" />
+				</Linker>
+			</Target>
+			<Target title="MSys2 wxMultiDLL">
+				<Option output="../samples/minimal/msys2_wxMSW_dll-minimal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_wxMSW_dll/minimal" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-DWXUSINGDLL" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory="../samples/minimal" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples/minimal" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxpdfdoc_gcc_pdfdoc.a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu-$(WX_VERSION).dll.a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+					<Add directory="../lib/msys2_wxMSW_dll" />
+				</Linker>
+			</Target>
+			<Target title="MSys2 wxMultilib">
+				<Option output="../samples/minimal/msys2_wxMSW-minimal" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_wxMSW/minimal" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-D_CONSOLE" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+					<Add directory="../samples/minimal" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+					<Add directory="../samples/minimal" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxpdfdoc_gcc_pdfdoc.a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).a" />
+					<Add library="libwx_baseu_xml-$(WX_VERSION).a" />
+					<Add library="libwx_baseu-$(WX_VERSION).a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+					<Add directory="../lib/msys2_wxMSW" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="WX_VERSION" value="3.0" />
+			</Environment>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="MSys2 DLL wxMultiDLL;MSys2 DLL wxMultilib;MSys2 wxMultiDLL;MSys2 wxMultilib;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</ResourceCompiler>
+		<Unit filename="../samples/minimal/attachment.cpp" />
+		<Unit filename="../samples/minimal/barcodes.cpp" />
+		<Unit filename="../samples/minimal/bookmark.cpp" />
+		<Unit filename="../samples/minimal/charting.cpp" />
+		<Unit filename="../samples/minimal/cjktest.cpp" />
+		<Unit filename="../samples/minimal/clipping.cpp" />
+		<Unit filename="../samples/minimal/drawing.cpp" />
+		<Unit filename="../samples/minimal/glyphwriting.cpp" />
+		<Unit filename="../samples/minimal/gradients.cpp" />
+		<Unit filename="../samples/minimal/indicfonts.cpp" />
+		<Unit filename="../samples/minimal/jsform.cpp" />
+		<Unit filename="../samples/minimal/kerning.cpp" />
+		<Unit filename="../samples/minimal/labels.cpp" />
+		<Unit filename="../samples/minimal/layers.cpp" />
+		<Unit filename="../samples/minimal/minimal.cpp" />
+		<Unit filename="../samples/minimal/minimal.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="../samples/minimal/protection.cpp" />
+		<Unit filename="../samples/minimal/rotation.cpp" />
+		<Unit filename="../samples/minimal/templates.cpp" />
+		<Unit filename="../samples/minimal/transformation.cpp" />
+		<Unit filename="../samples/minimal/transparency.cpp" />
+		<Unit filename="../samples/minimal/tutorial1.cpp" />
+		<Unit filename="../samples/minimal/tutorial2.cpp" />
+		<Unit filename="../samples/minimal/tutorial3.cpp" />
+		<Unit filename="../samples/minimal/tutorial4.cpp" />
+		<Unit filename="../samples/minimal/tutorial5.cpp" />
+		<Unit filename="../samples/minimal/tutorial6.cpp" />
+		<Unit filename="../samples/minimal/tutorial7.cpp" />
+		<Unit filename="../samples/minimal/wmf.cpp" />
+		<Unit filename="../samples/minimal/xmlwrite.cpp" />
+		<Extensions>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

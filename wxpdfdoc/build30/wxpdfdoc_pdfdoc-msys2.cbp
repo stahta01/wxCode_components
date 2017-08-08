@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxpdfdoc_pdfdoc_msys2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="MSys2 DLL wxMultiDLL">
+				<Option output="../lib/msys2_dll_wxMSW_dll/wxcode_msw30u_pdfdoc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_dll_wxMSW_dll/pdfdoc" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DDLL_EXPORTS" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-DWXMAKINGDLL_PDFDOC" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwx_baseu_xml-$(WX_VERSION).dll.a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).dll.a" />
+					<Add library="libwx_baseu-$(WX_VERSION).dll.a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+				</Linker>
+			</Target>
+			<Target title="MSys2 DLL wxMultilib">
+				<Option output="../lib/msys2_dll_wxMSW/wxcode_msw30u_pdfdoc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="msys2_dll_wxMSW/pdfdoc" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DDLL_EXPORTS" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-DWXMAKINGDLL_PDFDOC" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwx_baseu_xml-$(WX_VERSION).a" />
+					<Add library="libwx_mswu_core-$(WX_VERSION).a" />
+					<Add library="libwx_baseu-$(WX_VERSION).a" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="comdlg32" />
+					<Add library="winspool" />
+					<Add library="winmm" />
+					<Add library="shell32" />
+					<Add library="comctl32" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="uuid" />
+					<Add library="rpcrt4" />
+					<Add library="advapi32" />
+					<Add library="wsock32" />
+					<Add library="oleacc" />
+				</Linker>
+			</Target>
+			<Target title="MSys2 wxMultiDLL">
+				<Option output="../lib/msys2_wxMSW_dll/wxpdfdoc_gcc_pdfdoc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="msys2_wxMSW_dll/pdfdoc" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_LIB" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add option="-DWXUSINGDLL" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+				</Compiler>
+			</Target>
+			<Target title="MSys2 wxMultilib">
+				<Option output="../lib/msys2_wxMSW/wxpdfdoc_gcc_pdfdoc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="msys2_wxMSW/pdfdoc" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_LIB" />
+					<Add option="-D_UNICODE" />
+					<Add option="-D__WXMSW__" />
+					<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/msw-unicode-$(WX_BUILD)$(WX_VERSION)" />
+					<Add directory="../include" />
+				</Compiler>
+			</Target>
+			<Environment>
+				<Variable name="WX_VERSION" value="3.0" />
+			</Environment>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="MSys2 DLL wxMultiDLL;MSys2 DLL wxMultilib;MSys2 wxMultiDLL;MSys2 wxMultilib;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</Compiler>
+		<Unit filename="../include/wx/pdfannotation.h" />
+		<Unit filename="../include/wx/pdfarraydouble.h" />
+		<Unit filename="../include/wx/pdfarraytypes.h" />
+		<Unit filename="../include/wx/pdfbarcode.h" />
+		<Unit filename="../include/wx/pdfbookmark.h" />
+		<Unit filename="../include/wx/pdfcffdecoder.h" />
+		<Unit filename="../include/wx/pdfcffindex.h" />
+		<Unit filename="../include/wx/pdfcjkfontdata.h" />
+		<Unit filename="../include/wx/pdfcolour.h" />
+		<Unit filename="../include/wx/pdfcoonspatchmesh.h" />
+		<Unit filename="../include/wx/pdfcorefontdata.h" />
+		<Unit filename="../include/wx/pdfdc.h" />
+		<Unit filename="../include/wx/pdfdc28.h" />
+		<Unit filename="../include/wx/pdfdc29.h" />
+		<Unit filename="../include/wx/pdfdoc.h" />
+		<Unit filename="../include/wx/pdfdocdef.h" />
+		<Unit filename="../include/wx/pdfdocument.h" />
+		<Unit filename="../include/wx/pdfencoding.h" />
+		<Unit filename="../include/wx/pdfencrypt.h" />
+		<Unit filename="../include/wx/pdffont.h" />
+		<Unit filename="../include/wx/pdffontdata.h" />
+		<Unit filename="../include/wx/pdffontdatacore.h" />
+		<Unit filename="../include/wx/pdffontdataopentype.h" />
+		<Unit filename="../include/wx/pdffontdatatruetype.h" />
+		<Unit filename="../include/wx/pdffontdatatype0.h" />
+		<Unit filename="../include/wx/pdffontdatatype1.h" />
+		<Unit filename="../include/wx/pdffontdescription.h" />
+		<Unit filename="../include/wx/pdffontdetails.h" />
+		<Unit filename="../include/wx/pdffontextended.h" />
+		<Unit filename="../include/wx/pdffontmacosx.h" />
+		<Unit filename="../include/wx/pdffontmanager.h" />
+		<Unit filename="../include/wx/pdffontparser.h" />
+		<Unit filename="../include/wx/pdffontparsertruetype.h" />
+		<Unit filename="../include/wx/pdffontparsertype1.h" />
+		<Unit filename="../include/wx/pdffontsubsetcff.h" />
+		<Unit filename="../include/wx/pdffontsubsettruetype.h" />
+		<Unit filename="../include/wx/pdffontvolt.h" />
+		<Unit filename="../include/wx/pdfform.h" />
+		<Unit filename="../include/wx/pdfgradient.h" />
+		<Unit filename="../include/wx/pdfgraphics.h" />
+		<Unit filename="../include/wx/pdfimage.h" />
+		<Unit filename="../include/wx/pdfinfo.h" />
+		<Unit filename="../include/wx/pdflayer.h" />
+		<Unit filename="../include/wx/pdflinestyle.h" />
+		<Unit filename="../include/wx/pdflinks.h" />
+		<Unit filename="../include/wx/pdfobjects.h" />
+		<Unit filename="../include/wx/pdfparser.h" />
+		<Unit filename="../include/wx/pdfpattern.h" />
+		<Unit filename="../include/wx/pdfprint.h" />
+		<Unit filename="../include/wx/pdfproperties.h" />
+		<Unit filename="../include/wx/pdfrijndael.h" />
+		<Unit filename="../include/wx/pdfshape.h" />
+		<Unit filename="../include/wx/pdfspotcolour.h" />
+		<Unit filename="../include/wx/pdftemplate.h" />
+		<Unit filename="../include/wx/pdfutility.h" />
+		<Unit filename="../include/wx/pdfxml.h" />
+		<Unit filename="../src/pdfannotation.cpp" />
+		<Unit filename="../src/pdfbarcode.cpp" />
+		<Unit filename="../src/pdfcffdecoder.cpp" />
+		<Unit filename="../src/pdfcffindex.cpp" />
+		<Unit filename="../src/pdfcolour.cpp" />
+		<Unit filename="../src/pdfdc.cpp" />
+		<Unit filename="../src/pdfdecode.cpp" />
+		<Unit filename="../src/pdfdocument.cpp" />
+		<Unit filename="../src/pdfencoding.cpp" />
+		<Unit filename="../src/pdfencrypt.cpp" />
+		<Unit filename="../src/pdffont.cpp" />
+		<Unit filename="../src/pdffontdata.cpp" />
+		<Unit filename="../src/pdffontdatacore.cpp" />
+		<Unit filename="../src/pdffontdataopentype.cpp" />
+		<Unit filename="../src/pdffontdatatruetype.cpp" />
+		<Unit filename="../src/pdffontdatatype0.cpp" />
+		<Unit filename="../src/pdffontdatatype1.cpp" />
+		<Unit filename="../src/pdffontdescription.cpp" />
+		<Unit filename="../src/pdffontdetails.cpp" />
+		<Unit filename="../src/pdffontextended.cpp" />
+		<Unit filename="../src/pdffontmanager.cpp" />
+		<Unit filename="../src/pdffontparser.cpp" />
+		<Unit filename="../src/pdffontparsertruetype.cpp" />
+		<Unit filename="../src/pdffontparsertype1.cpp" />
+		<Unit filename="../src/pdffontsubsetcff.cpp" />
+		<Unit filename="../src/pdffontsubsettruetype.cpp" />
+		<Unit filename="../src/pdffontvolt.cpp" />
+		<Unit filename="../src/pdfform.cpp" />
+		<Unit filename="../src/pdfgradient.cpp" />
+		<Unit filename="../src/pdfgraphics.cpp" />
+		<Unit filename="../src/pdfimage.cpp" />
+		<Unit filename="../src/pdfkernel.cpp" />
+		<Unit filename="../src/pdflayer.cpp" />
+		<Unit filename="../src/pdfobjects.cpp" />
+		<Unit filename="../src/pdfocg.cpp" />
+		<Unit filename="../src/pdfparser.cpp" />
+		<Unit filename="../src/pdfpattern.cpp" />
+		<Unit filename="../src/pdfprint.cpp" />
+		<Unit filename="../src/pdfrijndael.cpp" />
+		<Unit filename="../src/pdftemplate.cpp" />
+		<Unit filename="../src/pdfutility.cpp" />
+		<Unit filename="../src/pdfxml.cpp" />
+		<Extensions>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
